@@ -1,0 +1,50 @@
+{
+  "name": "pollen-solutions/docs",
+  "description": "Documentation PresstiFy.",
+  "homepage": "https://pollen-solutions/components/docs/",
+  "keywords": [
+    "pollen-solutions",
+    "component",
+    "docs"
+  ],
+  "time": "2020-12-12",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Jordy Manner",
+      "email": "jordy.manner@milkcreation.fr",
+      "role": "Developper"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://composer.tigreblanc.fr/pollen-solutions/"
+    }
+  ],
+  "require": {
+    "php": ">=7.2",
+    "composer/installers": "~1.0",
+    "erusev/parsedown": "^1.7"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Pollen\\Docs\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Pollen\\Docs\\Test\\": "tests"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "config": {
+    "optimize-autoloader": true,
+    "preferred-install": "dist",
+    "sort-packages": true
+  }
+}

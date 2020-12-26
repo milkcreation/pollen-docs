@@ -43,7 +43,7 @@ standard de **Wordpress** décrite sur le [site officiel](https://fr.wordpress.o
 ###### via composer 
 
 ```bash
-$ composer create-project --repository-url https://composer.tigreblanc.fr/presstify presstify/wordpress-classic htdocs
+$ composer create-project --repository-url https://composer.presstify.com/presstify presstify/wordpress-classic htdocs
 ```
 ###### Configuration
 

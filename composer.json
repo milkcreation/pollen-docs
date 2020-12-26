@@ -1,25 +1,25 @@
 {
   "name": "pollen-solutions/docs",
   "description": "Documentation PresstiFy.",
-  "homepage": "https://pollen-solutions/components/docs/",
+  "homepage": "https://www.presstify.com/pollen-solutions/docs/",
   "keywords": [
     "pollen-solutions",
     "component",
     "docs"
   ],
-  "time": "2020-12-12",
+  "time": "2020-12-26",
   "license": "MIT",
   "authors": [
     {
       "name": "Jordy Manner",
-      "email": "jordy.manner@milkcreation.fr",
+      "email": "jordy@presstify.com",
       "role": "Developper"
     }
   ],
   "repositories": [
     {
       "type": "composer",
-      "url": "https://composer.tigreblanc.fr/pollen-solutions/"
+      "url": "https://composer.presstify.com/pollen-solutions/"
     }
   ],
   "require": {

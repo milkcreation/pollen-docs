@@ -62,7 +62,11 @@ class Docs implements DocsContract
     public function boot(): DocsContract
     {
         if (!$this->isBooted()) {
+            events()->trigger('docs.booting', [$this]);
+
             $this->setBooted();
+
+            events()->trigger('docs.booting', [$this]);
         }
 
         return $this;

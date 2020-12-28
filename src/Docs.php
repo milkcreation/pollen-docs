@@ -1,4 +1,6 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Pollen\Docs;
 
@@ -11,7 +13,8 @@ use tiFy\Support\ParamsBag;
 
 class Docs implements DocsContract
 {
-    use BootableTrait, ContainerAwareTrait;
+    use BootableTrait;
+    use ContainerAwareTrait;
 
     /**
      * Instance de la classe.

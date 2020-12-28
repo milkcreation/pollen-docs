@@ -1,4 +1,6 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Pollen\Docs;
 
@@ -11,7 +13,7 @@ class DocsServiceProvider extends BaseServiceProvider
      * @var string[]
      */
     protected $provides = [
-        DocsContract::class
+        DocsContract::class,
     ];
 
     /**
@@ -19,9 +21,12 @@ class DocsServiceProvider extends BaseServiceProvider
      */
     public function boot()
     {
-        events()->listen('wp.booted', function () {
-            $this->getContainer()->get(DocsContract::class)->boot();
-        });
+        events()->listen(
+            'wp.booted',
+            function () {
+                $this->getContainer()->get(DocsContract::class)->boot();
+            }
+        );
     }
 
     /**
@@ -29,8 +34,11 @@ class DocsServiceProvider extends BaseServiceProvider
      */
     public function register(): void
     {
-        $this->getContainer()->share(DocsContract::class, function (): DocsContract {
-            return new Docs(config('docs', []), $this->getContainer());
-        });
+        $this->getContainer()->share(
+            DocsContract::class,
+            function (): DocsContract {
+                return new Docs(config('docs', []), $this->getContainer());
+            }
+        );
     }
 }
